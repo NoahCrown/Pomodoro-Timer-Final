@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from 'react'
 import Button from './components/Button'
 import CountdownAnimation from './components/CountdownAnimation'
 import SetPomodoro from './components/SetPomodoro'
-import { SettingsContext } from './context/SettingContext'
+import { SettingsContext } from './context/SettingsContext'
 
 const App = () => {
 
@@ -17,10 +17,7 @@ const App = () => {
     setCurrentTimer,
     SettingsBtn } = useContext(SettingsContext)
 
-    useEffect(() => {
-      updateExecute(executing)
-    }, [executing, startAnimate])
-
+    useEffect(() => {updateExecute(executing)}, [executing, startAnimate])
 
   return (
     <div className="container">

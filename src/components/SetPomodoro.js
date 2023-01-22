@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { SettingsContext } from '../context/SettingContext'
+import { SettingsContext } from '../context/SettingsContext'
 
 const SetPomodoro = () => {
 
@@ -43,9 +43,9 @@ const SetPomodoro = () => {
         <div className="form-container">
             <form noValidate onSubmit={handleSubmit}>
                 <div className="input-wrapper">
-                    <input className="input"  name="work" onChange={handleChange} value={newTimer.work} />
-                    <input className="input"  name="shortBreak" onChange={handleChange} value={newTimer.short} />
-                    <input className="input"  name="longBreak" onChange={handleChange} value={newTimer.long} />
+                    <input className="input" type="number" name="work" onChange={handleChange} value={newTimer.work} />
+                    <input className="input" type="number" name="shortBreak" onChange={handleChange} value={newTimer.short} />
+                    <input className="input" type="number" name="longBreak" onChange={handleChange} value={newTimer.long} />
                 </div>
                 <button type='submit'>Set Timer</button>
             </form>
