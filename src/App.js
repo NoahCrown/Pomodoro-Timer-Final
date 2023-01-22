@@ -18,8 +18,8 @@ const App = () => {
     SettingsBtn } = useContext(SettingsContext)
 
     useEffect(() => {
-      updateExecute(executing);
       // eslint-disable-line react-hooks/exhaustive-deps
+      updateExecute(executing);
     }, [executing, startAnimate])
 
   return (
