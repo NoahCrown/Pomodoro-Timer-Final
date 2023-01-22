@@ -17,7 +17,10 @@ const App = () => {
     setCurrentTimer,
     SettingsBtn } = useContext(SettingsContext)
 
-    useEffect(() => {updateExecute(executing)}, [executing, startAnimate])
+    useEffect(() => {
+      updateExecute(executing);
+      // eslint-disable-line react-hooks/exhaustive-deps
+    }, [executing, startAnimate])
 
   return (
     <div className="container">
