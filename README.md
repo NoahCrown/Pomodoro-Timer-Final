@@ -1,5 +1,5 @@
 ---
-permalink: /public/index.html
+permalink: public/index.html
 ---
 # Pomodoro-StudyBuddy-App
   a straightforward Pomodoro Timer application for desktop and mobile browsers. This aims to assist you in time management so that you can concentrate on any tasks, like studying
