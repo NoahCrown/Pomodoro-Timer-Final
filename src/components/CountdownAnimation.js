@@ -11,13 +11,13 @@ const CountdownAnimation = ({key, timer, animate, children}) => {
         isPlaying={animate}
         duration={timer * 60}
         colors={[
-          ['#FF6E31', 0.33],
-          ['#FF6E31', 0.33],
-          ['#FF6E31', 0.33],
+          ['#FFFFFF', 0.33],
+          ['#FFFFFF', 0.33],
+          ['#FFFFFF', 0.33],
         ]}
         strokeWidth={6}
         size={220}
-        trailColor="#D3756B"
+        trailColor="#F0997D"
         onComplete={ () => {
           stopAimate()
         }}
